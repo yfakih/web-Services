@@ -11,7 +11,7 @@ import java.util.List;
 @WebService(serviceName = "BanqueWS")
 public class BancService {
 
-    static private List<Account> accs = new ArrayList<>();
+    private static List<Account> accs = new ArrayList<>();
 
     @WebMethod(operationName = "convertToMAD")
     public double convert(@WebParam(name = "montant" ) double mt){
